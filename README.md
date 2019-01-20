@@ -11,3 +11,14 @@ var saveProduct = function(options) {
 };
 saveProduct({model: "XYZ-002", price: 70.24});
 ```
+
+will output:
+
+```
+{
+  "model": "XYZ-002",
+  "price": 70.24,
+  "taxRate": 25,
+  "status": true
+}
+```
