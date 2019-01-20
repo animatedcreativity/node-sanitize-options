@@ -1,6 +1,6 @@
 {
   "name": "node-sanitize-options",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Combines any options passed by user with default options so that they are never undefined.",
   "main": "main.js",
   "scripts": {

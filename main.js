@@ -1,4 +1,4 @@
-exports = function(passedOptions, defaultOptions) {
+exports.options = function(passedOptions, defaultOptions) {
   if (typeof passedOptions === "undefined") {
     return defaultOptions;
   } else {
