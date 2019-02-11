@@ -1,8 +1,11 @@
 exports.options = function(passedOptions, defaultOptions) {
-  if (typeof passedOptions === "undefined") {
-    return defaultOptions;
-  } else {
-    for (var key in defaultOptions) if (typeof passedOptions[key] === "undefined") passedOptions[key] = defaultOptions[key];
-    return passedOptions;
+  var options = {};
+  if (typeof defaultOptions !== "undefined") {
+    for (var key in defaultOptions) options[key] = defaultOptions[key];
   }
+  var options = {};
+  if (typeof passedOptions !== "undefined") {
+    for (var key in passedOptions) options[key] = passedOptions[key];
+  }
+  return options;
 };
